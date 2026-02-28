@@ -19,6 +19,6 @@ python -m http.server 8000
 ```
 ### Option B: open the file directly
 1. Download the repository.
-2. Double-click index.html to open it in your browser.
+2. Double-click `index.html` to open it in your browser.
 
 If anything does not load correctly, use Option A.
