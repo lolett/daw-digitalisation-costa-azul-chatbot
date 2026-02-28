@@ -12,7 +12,13 @@ It covers schedules, services, rooms, local recommendations, and escalation to a
   Responsive HTML/CSS/JS prototype with intent detection + quick-action buttons (chips) + fallback + optional chat history in `localStorage`. 
 
 ## How to run the web prototype
+### Option A: Run a simple python local server
 From the project folder:
 ```bash
 python -m http.server 8000
 ```
+### Option B: open the file directly
+1. Download the repository.
+2. Double-click index.html to open it in your browser.
+
+If anything does not load correctly, use Option A.
