@@ -30,4 +30,5 @@ If anything does not load correctly, use Option A.
 
 ## Evidence
 - Assignment PDF: evidence/PROYECTO_chatbot_Digitalización.pdf
+- Report PDF: evidence/Chatbot_CostaAzul_Memoria_DAW2.pdf
 
