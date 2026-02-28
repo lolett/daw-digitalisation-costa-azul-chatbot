@@ -1,0 +1,112 @@
+*{box-sizing:border-box}
+:root{
+  --bg:#0b1220;
+  --panel:#111a2e;
+  --card:#0f1a33;
+  --text:#e8eefc;
+  --muted:#a9b6d6;
+  --border:rgba(255,255,255,.08);
+  --accent:#79b7ff;
+}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:linear-gradient(180deg, var(--bg), #070c16);
+  color:var(--text);
+}
+.topbar{
+  position:sticky; top:0; z-index:10;
+  display:flex; justify-content:space-between; align-items:center;
+  padding:14px 16px;
+  border-bottom:1px solid var(--border);
+  background:rgba(11,18,32,.85);
+  backdrop-filter: blur(8px);
+}
+.brand{display:flex; gap:12px; align-items:center}
+.logo{
+  width:40px; height:40px; border-radius:12px;
+  display:grid; place-items:center;
+  background:rgba(121,183,255,.18);
+  border:1px solid var(--border);
+  font-weight:700;
+}
+.title{font-weight:700}
+.subtitle{font-size:12px; color:var(--muted)}
+.ghost{
+  border:1px solid var(--border);
+  background:transparent;
+  color:var(--text);
+  padding:8px 10px;
+  border-radius:12px;
+  cursor:pointer;
+}
+.wrap{max-width:860px; margin:0 auto; padding:16px}
+.chat{
+  background:rgba(17,26,46,.55);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:14px;
+  min-height:52vh;
+  max-height:62vh;
+  overflow:auto;
+}
+.msg{display:flex; margin:10px 0}
+.bubble{
+  max-width:min(680px, 85%);
+  padding:10px 12px;
+  border-radius:16px;
+  border:1px solid var(--border);
+  background:rgba(15,26,51,.65);
+  line-height:1.35;
+}
+.msg.user{justify-content:flex-end}
+.msg.user .bubble{
+  background:rgba(121,183,255,.16);
+  border-color:rgba(121,183,255,.28);
+}
+.meta{
+  margin-top:6px;
+  font-size:11px;
+  color:var(--muted);
+}
+.chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin:12px 0;
+}
+.chip{
+  border:1px solid var(--border);
+  background:rgba(255,255,255,.04);
+  color:var(--text);
+  padding:8px 10px;
+  border-radius:999px;
+  cursor:pointer;
+}
+.chip:hover{border-color:rgba(121,183,255,.45)}
+.composer{
+  display:flex; gap:10px;
+  background:rgba(17,26,46,.55);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:10px;
+}
+.composer input{
+  flex:1;
+  border:none;
+  outline:none;
+  background:transparent;
+  color:var(--text);
+  font-size:14px;
+}
+.composer button{
+  border:none;
+  background:rgba(121,183,255,.22);
+  color:var(--text);
+  padding:10px 12px;
+  border-radius:12px;
+  cursor:pointer;
+  font-weight:600;
+}
+.hint{color:var(--muted); font-size:12px; margin-top:10px}

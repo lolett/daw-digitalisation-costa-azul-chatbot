@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chatbot Hotel CostaAzul (Prototipo)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">CA</div>
+      <div>
+        <div class="title">Hotel CostaAzul</div>
+        <div class="subtitle">Asistente virtual (prototipo)</div>
+      </div>
+    </div>
+    <button id="btnClear" class="ghost" title="Borrar conversación">Borrar</button>
+  </header>
+
+  <main class="wrap">
+    <section id="chat" class="chat" aria-label="Conversación"></section>
+
+    <section class="chips" aria-label="Accesos rápidos">
+      <button class="chip" data-chip="servicios">Servicios del hotel</button>
+      <button class="chip" data-chip="habitaciones">Habitaciones</button>
+      <button class="chip" data-chip="recomendaciones">Recomendaciones</button>
+      <button class="chip" data-chip="recepcion">Hablar con recepción</button>
+    </section>
+
+    <form id="form" class="composer" autocomplete="off">
+      <input id="input" type="text" placeholder="Escribe tu mensaje…" aria-label="Escribe tu mensaje" />
+      <button id="send" type="submit">Enviar</button>
+    </form>
+
+    <p class="hint">
+      Prueba: “¿A qué hora es el check-in?”, “¿Tenéis parking?”, “¿Qué puedo hacer por la tarde?” o “Quiero hablar con una persona”.
+    </p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

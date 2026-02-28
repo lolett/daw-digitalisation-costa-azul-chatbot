@@ -1,12 +1,16 @@
-# Costa Azul Chatbot (Digitalisation)
+# Chatbot Hotel CostaAzul (Prototipo)
 
-## Overview
-Chatbot created as a digital solution for a business use case (Digitalisation Applied to Productive Sectors).
+Prototipo web responsive (sin backend) que cumple:
+- Saludo e identificación
+- FAQ (horarios, wifi, parking, mascotas, servicios)
+- Habitaciones (tipos, capacidad, desayuno, cancelación - resumen)
+- Recomendaciones locales
+- Derivación a recepción humana (simulada)
+- Fallback (no entiendo + opciones)
 
-## Live Demo (Landbot)
+## Ejecutar
 ```bash
-https://landbot.online/v3/H-3285916-M30R4QH2EC8IM3TO/index.html
+python -m http.server 8000
 ```
-
-## Evidence
-Optional screenshots are available in `/screenshots`.
+Abrir:
+- http://localhost:8000
