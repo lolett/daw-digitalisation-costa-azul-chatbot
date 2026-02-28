@@ -9,7 +9,12 @@ It covers schedules, services, rooms, local recommendations, and escalation to a
   https://landbot.online/v3/H-3285916-M30R4QH2EC8IM3TO/index.html
 
 - **Web prototype (no backend):**
-  Responsive HTML/CSS/JS prototype with intent detection + quick-action buttons (chips) + fallback + optional chat history in `localStorage`. 
+  Responsive HTML/CSS/JS prototype with intent detection + quick-action buttons (chips) + fallback + optional chat history in `localStorage`.
+
+## Live Demo
+```bahs
+https://lolett.github.io/daw-digitalisation-costa-azul-chatbot/
+```
 
 ## How to run the web prototype
 ### Option A: Run a simple python local server
